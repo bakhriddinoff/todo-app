@@ -1,0 +1,217 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background 0.3s, color 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+}
+#background {
+    background-image: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Light Theme */
+.light-theme {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background: #222;
+    color: #fff;
+}
+
+/* Light theme */
+.light-theme #form {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.light-theme .circle {
+    border: 1px solid hsl(233, 14%, 35%);
+}
+
+.light-theme #input {
+    color: #333;
+}
+
+.light-theme .list-wrapper {
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0px 2px 10px -2px hsl(235, 24%, 19%);
+}
+
+.light-theme #list > li {
+    color: hsl(235, 19%, 35%);
+}
+
+.light-theme .filters {
+    color: hsl(236, 9%, 61%);
+}
+
+.light-theme .btnT {
+    color: hsl(236, 9%, 61%);
+}
+
+.light-theme .btnT:hover {
+    color: hsl(235, 19%, 35%)
+}
+
+.light-theme .btnT:active {
+    color: hsl(220, 98%, 61%);
+}
+
+/* Dark theme */
+.dark-theme #form {
+    background-color: hsl(235, 24%, 19%);
+}
+.dark-theme .circle {
+    border: 1px solid hsl(233, 14%, 35%);
+}
+
+.dark-theme #input {
+    color: #fff;
+}
+
+.dark-theme .list-wrapper {
+    background-color: hsl(235, 24%, 19%);
+}
+
+.dark-theme #list > li {
+    color: #fff;
+}
+
+.dark-theme .filters {
+    color: hsl(234, 39%, 85%);
+}
+
+.dark-theme .btnT {
+    color: hsl(237, 14%, 26%);
+}
+
+.dark-theme .btnT:hover {
+    color: hsl(236, 33%, 92%);
+}
+
+.dark-theme .btnT:active {
+    color: hsl(220, 98%, 61%);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: transparent
+}
+
+#form {
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
+.circle {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#typing {
+    color: white;
+    display: none;
+}
+
+#input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.list-wrapper {
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+#list > li {
+    list-style: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    border-bottom: 1px solid  hsl(234, 39%, 85%)
+
+}
+
+.removeBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+}
+.filter-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btnT {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+#clearCompleted {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
