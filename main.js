@@ -10,3 +10,14 @@ const itemsLeft = document.getElementById('items-left');
 const themeToggle = document.getElementById("themeToggle");
 const background = document.getElementById('background');
 const body = document.body;
+
+let toDoes = [
+    {
+        task: 'Complete online JavaScript course',
+        isCompleted: true
+    },
+    {
+        task: 'Jog around the park 3x',
+        isCompleted: false
+    }
+];
